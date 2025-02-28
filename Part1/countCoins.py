@@ -31,7 +31,7 @@ def count_coins(img):
     print("Number of coins detected:", valid_contours - 1)
     return processed_img
 
-img_path = "./../img/three_redmi.jpg"
+img_path = "./../img/three.jpg"
 
 # Load and preprocess the image
 original_img = cv2.imread(img_path)
@@ -52,7 +52,7 @@ display_images([cv2.cvtColor(blurred_img, cv2.COLOR_BGR2RGB), gray_img],
 
 # Apply threshold
 _, binary_img = cv2.threshold(gray_img, 170, 255, cv2.THRESH_BINARY)
-display_images([gray_img, binary_img], ["Grayscale", "Thresholded"], "thresholded.png")
+display_images([gray_img, binary_img], ["Grayscale", "Thresholded"], "coinsCount.png")
 
 # Find contours
 contours, _ = cv2.findContours(binary_img.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
@@ -69,7 +69,7 @@ for i in range(1, valid_contours):
     cv2.drawContours(segmented_img, contours, detected_objects[i, 0], colors[i], cv2.FILLED)
 
 display_images([cv2.cvtColor(processed_img, cv2.COLOR_BGR2RGB), cv2.cvtColor(segmented_img, cv2.COLOR_BGR2RGB)], 
-               ["Contours on Original", "Segmented with Filled Regions"], "segmented_coins.png")
+               ["Contours on Original", "Segmented with Filled Regions"], "coinsSegment.png")
 
 # Count coins
 counted_img = count_coins(resized_img)

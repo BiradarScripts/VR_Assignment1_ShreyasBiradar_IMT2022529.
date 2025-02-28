@@ -13,7 +13,7 @@ def display_images(img_list, titles, save_path=None):
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
     plt.show()
 
-img_path = "./../img/three_redmi.jpg"
+img_path = "./../img/three.jpg"
 
 # Load and preprocess the image
 original_img = cv2.imread(img_path)
