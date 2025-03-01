@@ -54,7 +54,7 @@ plt.figure(figsize=(12, 6))
 plt.imshow(match_display)
 plt.title("Matching Keypoints")
 plt.axis('off')
-show_plot(plt.gcf(), save_path="matching_keypoints.png")
+show_plot(plt.gcf(), save_path="matchedKeypoints.png")
 
 def ransac_homography(data_points, threshold=5, iterations=5000):
     best_inliers = []
@@ -86,7 +86,7 @@ for p in outlier_points:
     ax.plot([p[0], p[2]], [p[1], p[3]], 'r-', alpha=0.3)
 ax.set_title("Inliers (Green) vs Outliers (Red)")
 ax.axis('off')
-show_plot(fig, save_path="inliers_outliers.png")
+show_plot(fig, save_path="Liners.png")
 
 h_1, w_1 = image_2.shape[:2]
 h_2, w_2 = image_1.shape[:2]
@@ -103,6 +103,6 @@ plt.figure(figsize=(12, 6))
 plt.imshow(cv2.cvtColor(stitched_image, cv2.COLOR_BGR2RGB))
 plt.title("Final Stitched Image")
 plt.axis('off')
-show_plot(plt.gcf(), save_path="final_panorama.png")
-cv2.imwrite('stitched_result.jpg', stitched_image)
+show_plot(plt.gcf(), save_path="Panaroma.png")
+cv2.imwrite('stichedResult.jpg', stitched_image)
 print("Panorama image saved successfully.")
