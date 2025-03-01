@@ -2,7 +2,7 @@
 
 **Author:** Shreyas Biradar  
 **ID:** IMT2022529  
-**Date:** $(date)
+
 
 ## Abstract
 Computer vision is a vast and evolving field that enables machines to interpret and make decisions based on visual data. This report focuses on two major applications: **image stitching for panoramic generation** and **object detection using machine learning**. 
@@ -27,7 +27,7 @@ Object detection involves multiple approaches, from **traditional image processi
 5. Use a **classifier (deep learning model)** to categorize objects.
 
 **Example: Detected Coins**
-![Detected Coins](coinsDetect.png)
+![image](https://github.com/user-attachments/assets/5652d815-c5a7-47b5-9283-57950ea86950)
 
 ### Segmentation and Classification
 Segmentation isolates **regions of interest (ROI)** in an image. Steps include:
@@ -38,7 +38,7 @@ Segmentation isolates **regions of interest (ROI)** in an image. Steps include:
 - Assign unique colors for segmentation.
 
 **Example: Segmented Coins**
-![Segmented Coins](coinsSegment.png)
+![image](https://github.com/user-attachments/assets/8c9525d0-76e9-4ab2-aecc-313422e14d67)
 
 ### Final Count
 Object detection and counting involve:
@@ -49,7 +49,8 @@ Object detection and counting involve:
 - Visualizing detected objects.
 
 **Example: Thresholded Coins**
-![Thresholded Coins](thresholded.png)
+![image](https://github.com/user-attachments/assets/7301e2de-9e10-4397-8845-f3b0e024cf64)
+
 
 ---
 
@@ -61,16 +62,16 @@ Panoramic image stitching aligns multiple overlapping images into a seamless vie
 - **SURF** (Speeded-Up Robust Features)
 
 **Example: Stitched Panorama**
-![Stitched Result](stitched_result.jpg)
+![image](https://github.com/user-attachments/assets/85eef055-b51c-4eb0-81c7-4fc7e52b9601)
 
 **Example: Keypoints in an Image**
-![Keypoints](keypoints.png)
+![image](https://github.com/user-attachments/assets/121dea88-f354-4f77-a1be-2759cb8b2239)
 
 **Example: Matching Keypoints**
-![Matching Keypoints](matching_keypoints.png)
+![image](https://github.com/user-attachments/assets/d8f35e57-37ac-43ae-99df-cf2aa168efee)
 
 **Example: Final Keypoint Matching**
-![Final Matching](inliers_outliers.png)
+![image](https://github.com/user-attachments/assets/ca578aea-9c16-4b3b-86cc-d61e68e7e568)
 
 ### Homography Estimation with RANSAC
 - Uses **RANSAC (Random Sample Consensus)** to remove outliers.
@@ -113,8 +114,21 @@ This report demonstrated object detection and panoramic image stitching techniqu
 - Exploring **deep learning architectures** for real-time applications.
 
 ---
+```bash
+VisualRecognition-Assignment1-/
+│
+├── Part1                  
+│   ├── coinDetect.py/             
+│   ├── coinSegment.py/                
+│   └── countCoins.py/
+│
+├── Part2                      
+│   ├── panaroma.py/ 
+│                     
+|
+├── img
+│   ├── ...
+│                       
+                       
 
-## References
-- OpenCV Documentation: [https://docs.opencv.org/](https://docs.opencv.org/)
-- Deep Learning for Object Detection: [https://pjreddie.com/darknet/yolo/](https://pjreddie.com/darknet/yolo/)
-- Image Stitching Techniques: [https://www.cs.cornell.edu/courses/cs4670/2018fa/](https://www.cs.cornell.edu/courses/cs4670/2018fa/)
+```
