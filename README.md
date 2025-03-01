@@ -114,7 +114,7 @@ This report demonstrated object detection and panoramic image stitching techniqu
 - Exploring **deep learning architectures** for real-time applications.
 
 ---
-##Folder Structuring
+## Folder Structuring
 ```bash
 VisualRecognition-Assignment1-/
 │
