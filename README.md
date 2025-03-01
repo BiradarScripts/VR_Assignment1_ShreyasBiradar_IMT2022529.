@@ -114,6 +114,7 @@ This report demonstrated object detection and panoramic image stitching techniqu
 - Exploring **deep learning architectures** for real-time applications.
 
 ---
+##Folder Structuring
 ```bash
 VisualRecognition-Assignment1-/
 │
@@ -128,7 +129,47 @@ VisualRecognition-Assignment1-/
 |
 ├── img
 │   ├── ...
-│                       
-                       
-
+│                                              
 ```
+## Setup Instructions
+
+Follow these steps to set up the project:
+
+```bash
+# Clone the repository
+git clone https://github.com/BiradarScripts/VisualRecognition-Assignment1-.git
+
+# Navigate into the project directory
+cd VisualRecognition-Assignment1-
+
+# Create a new Conda environment with Python 3.10
+conda create -p venv/ python==3.10
+
+# Activate the environment
+conda activate venv/
+
+# Install required dependencies
+pip install -r requirements.txt
+
+# Navigate to Part1 directory
+cd Part1
+
+# Run the coin detection script
+python coinDetect.py
+
+# Run the coin segmentation script
+python coinSegment.py
+
+# Run the coin counting script
+python countCoins.py
+
+# Navigate back to the root directory
+cd ..
+
+# Navigate to Part2 directory
+cd Part2
+
+# Run the panorama stitching script
+python panaroma.py
+```
+
