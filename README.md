@@ -140,7 +140,7 @@ Follow these steps to set up the project:
 git clone https://github.com/BiradarScripts/VR_Assignment1_ShreyasBiradar_IMT2022529..git
 
 # Navigate into the project directory
-cd VisualRecognition-Assignment1-
+cd VR_Assignment1_ShreyasBiradar_IMT2022529./
 
 # Create a new Conda environment with Python 3.10
 conda create -p venv/ python==3.10
